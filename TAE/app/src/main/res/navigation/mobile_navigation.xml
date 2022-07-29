@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mtz.tae.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_destinos"
+            app:destination="@id/nav_destinos" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_recomendaciones"
+            app:destination="@id/nav_recomendaciones" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_mapasitio"
+            app:destination="@id/nav_mapa" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_sobreNosotros"
+            app:destination="@id/nav_sobreNosotros" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_destinos"
+        android:name="com.mtz.tae.ui.destinos.DestinosFragment"
+        android:label="@string/menu_desnitos"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_recomendaciones"
+        android:name="com.mtz.tae.ui.recomendaciones.RecomendacionesFragment"
+        android:label="@string/menu_recomendaciones"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="com.mtz.tae.ui.mapasitio.MapaSitioFragment"
+        android:label="@string/menu_mapa_del_sitio"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_sobreNosotros"
+        android:name="com.mtz.tae.ui.sobrenosotros.SobreNosotrosFragment"
+        android:label="@string/menu_sobre_nosotros"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

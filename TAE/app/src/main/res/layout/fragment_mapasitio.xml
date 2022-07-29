@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMapaSitio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clipChildren="false">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdvHome"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:translationY="30dp"
+            app:cardBackgroundColor="#6EF0FA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.045">
+
+            <TextView
+                android:id="@+id/tvcvHome"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/nav_home_text"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btncvIrHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
+                android:text="   Ir"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdvmapasitio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:translationY="160dp"
+            app:cardBackgroundColor="#6EF0FA"
+            app:layout_constraintBottom_toTopOf="@+id/cdvDestinos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cdvHome">
+
+            <TextView
+                android:id="@+id/tvcvmapasitio"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/nav_mapa_text"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btncvIrmapasitio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
+                android:text="   Ir"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdvDestinos"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="44dp"
+            android:translationY="245dp"
+            app:cardBackgroundColor="#6EF0FA"
+            app:layout_constraintBottom_toTopOf="@id/cdvRecomendaciones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cdvmapasitio">
+
+            <TextView
+                android:id="@+id/tvcvDestinos"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/nav_destinos_text"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btncvIrDestinos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
+                android:text="   Ir"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdvRecomendaciones"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:translationY="420dp"
+            app:cardBackgroundColor="#6EF0FA"
+            app:layout_constraintBottom_toTopOf="@id/cdvSobrenosotros"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cdvDestinos"
+            app:layout_constraintVertical_bias="0.65">
+
+            <TextView
+                android:id="@+id/tvcvRecomendaciones"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/nav_recomendaciones_tex"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btncvIrRecomendaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
+                android:text="   Ir"
+                android:textSize="20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdvSobrenosotros"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:translationY="555dp"
+            app:cardBackgroundColor="#6EF0FA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cdvRecomendaciones"
+            app:layout_constraintVertical_bias="0.9">
+
+            <TextView
+                android:id="@+id/tvcvSobrenosotros"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/nav_sobreNosotros_text"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btncvIrSobrenosotros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_vertical"
+                android:text="   Ir"
+                android:textSize="20dp" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

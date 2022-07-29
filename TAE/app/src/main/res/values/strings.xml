@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">TAE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Nombre de las vistas -->
+    <string name="menu_home">Home</string>
+    <string name="menu_desnitos">Destinos</string>
+    <string name="menu_recomendaciones">Recomendaciones</string>
+    <string name="menu_mapa_del_sitio">Mapa del sitio</string>
+    <string name="menu_sobre_nosotros">Sobre nosotros</string>
+
+    <string name="nav_home_text">Home</string>
+    <string name="nav_destinos_text">Destinos</string>
+    <string name="nav_recomendaciones_tex">Recomendaciones</string>
+    <string name="nav_mapa_text">Mapa del sitio</string>
+    <string name="nav_sobreNosotros_text">Sobre nosotros</string>
+
+    <!-- Recomendaciones -->
+    <string name="tvUbiacionR">Ubicación</string>
+    <string name="tvClassEdadR">Clasificación por edad</string>
+    <string name="tvPreciosR">Rango de precios</string>
+    <string name="tvCapacidadR">Capacidad</string>
+    <string name="tvFacilidadesR">Facildades</string>
+    <string name="tvActividadPrincipalR">Actividad principal</string>
+
+    <!-- Desplegables para recomendaciones -->
+    <string-array name="ubicacionesR">
+        <item>Alajuela</item>
+        <item>Cartago</item>
+        <item>Guanacaste</item>
+        <item>Heredia</item>
+        <item>Limón</item>
+        <item>Puntarenas</item>
+        <item>San José</item>
+        <item>Otro</item>
+    </string-array>
+
+    <!-- Desplegable edad -->
+    <string-array name="classEdadR">
+        <item>Todo público</item>
+        <item>Mayores de 13 años</item>
+        <item>Mayores de 18 años</item>
+    </string-array>
+
+    <!-- Desplegable rango de precios -->
+    <string-array name="rangoDePreciosR">
+        <item>₡5000 o menos</item>
+        <item>Entre ₡5000 y ₡10000</item>
+        <item>Entre ₡10000 y ₡20000</item>
+        <item>Mayor a ₡20000</item>
+    </string-array>
+
+    <!-- Desplegable capacidad -->
+    <string-array name="capacidadR">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Desplegable facilidades -->
+    <string-array name="facilidadR">
+        <item>Parqueo</item>
+        <item>Spa</item>
+        <item>Alimentación</item>
+    </string-array>
+
+    <!-- Desplegable actividad principal -->
+    <string-array name="actividadPrincipalR">
+        <item>Senderismo</item>
+        <item>Rafting</item>
+        <item>Cabalgata</item>
+        <item>Tour gastronómico</item>
+        <item>Actividad cultural</item>
+        <item>Surf</item>
+        <item>Apreciación de arte</item>
+    </string-array>
+
+    <!-- Sobre nosotros -->
+    <string name="sobreNosotrosTitulo">Sobre nosotros</string>
+    <string name="sobreNosotrosSub1">Atributos elegidos</string>
+    <string name="sobreNosotrosAtributosE1">Rango de precios\nRango de edades\nProvincia\nActividad principal\nCapacidad</string>
+    <string name="sobreNosotrosSub2">Clases definidas</string>
+    <string name="sobreNosotrosAtributosE2">Aventura\nFamiliar\nCultural\nGastronómico</string>
+    <string name="sobreNosotrosParrafo">En el apartado de recomendaciones se muestra un formulario, mediante el cual generamos una serie de recomendaciones que se adaptan a la clase relacionada con los datos ingresados por el usuario; utilizando el algoritmo de Euclides</string>
+</resources>

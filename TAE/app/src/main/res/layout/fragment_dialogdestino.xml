@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRecomendaciones"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="850dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewdialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F8F5F5"
+            android:minWidth="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imgvImagenDialog"
+            android:layout_width="285dp"
+            android:layout_height="221dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewdialog"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@android:drawable/ic_dialog_info"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvNombreDialog"
+            android:layout_width="216dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Nombre"
+            android:translationY="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgvImagenDialog"
+            app:layout_constraintVertical_bias="0.106" />
+
+        <TextView
+            android:id="@+id/etmDescripcionDialog"
+            android:layout_width="275dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Descripcion"
+            android:translationY="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgvImagenDialog"
+            app:layout_constraintVertical_bias="0.216" />
+
+        <TextView
+            android:id="@+id/tvPrecioDialog"
+            android:layout_width="223dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Precio"
+            android:translationY="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgvImagenDialog"
+            app:layout_constraintVertical_bias="0.501" />
+
+        <TextView
+            android:id="@+id/tvFailidadDialog"
+            android:layout_width="223dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Facilidad"
+            android:translationY="80dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgvImagenDialog"
+            app:layout_constraintVertical_bias="0.772" />
+
+        <TextView
+            android:id="@+id/tvCapacidadDialog"
+            android:layout_width="221dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Capacidad"
+            android:translationY="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgvImagenDialog"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <TextView
+            android:id="@+id/tvProvinciaDialog"
+            android:layout_width="223dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Provincia"
+            android:translationY="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewdialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgvImagenDialog"
+            app:layout_constraintVertical_bias="0.372" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapViewD"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="clip_horizontal"
+            android:translationY="140dp"
+            android:enabled="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2Dialog"
+            app:layout_constraintTop_toBottomOf="@+id/tvFailidadDialog"
+            app:cameraZoom="15"
+            app:mapType="terrain"
+            app:liteMode="true"/>
+    </LinearLayout>
+</ScrollView>
